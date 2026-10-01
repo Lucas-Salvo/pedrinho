@@ -10,7 +10,7 @@ btnListar.addEventListener("click", async () => {
 });
 
 btnPost.addEventListener("click", async ()=> {
-    const resposta = await fetch("http://localhost:3000/alunos";,{
+    const resposta = await fetch("http://localhost:3000/alunos",{
         method: "POST",
         headers: {"Content-Type" : "application/json"},
         body: JSON.stringify({
@@ -22,4 +22,3 @@ btnPost.addEventListener("click", async ()=> {
     const dados = await resposta.json();
     console.log(dados);
 });
-
